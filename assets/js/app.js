@@ -45,7 +45,6 @@ function openTab(tabName) {
       tabContent[j].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
-
 }
 
 var btnOpen = document.getElementById('defaultOpenTab');
@@ -61,3 +60,39 @@ function changeBackgroundTwo(){
   btnOpen.style = "background: #F0AB1A; color: #000; box-shadow: 2px -3px 1px rgba(255,255,255,1);";
   btnClose.style= "background: #489593; color: #fff; box-shadow: none;";
 }
+
+
+$("#first").mouseover(function(){
+  $("#firstHover").show();
+});
+$("#first").mouseout(function(){
+  $("#firstHover").hide();
+});
+
+$("#second").mouseover(function(){
+  $("#secondHover").show();
+});
+$("#second").mouseout(function(){
+  $("#secondHover").hide();
+});
+
+$("#third").mouseover(function(){
+  $("#thirdHover").show();
+});
+$("#third").mouseout(function(){
+  $("#thirdHover").hide();
+});
+
+var k = 0;
+
+$('#closeMap').click(function(){
+  if(k==0){
+  $('#textMap').text('Deschide Harta');
+  $('iframe').fadeOut(800);
+  k=1;
+  } else{
+  $('#textMap').text('Inchide Harta');
+  $('iframe').fadeIn(800);
+  k=0;
+  }
+})

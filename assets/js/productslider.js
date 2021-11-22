@@ -22,7 +22,7 @@ $(document).on("ready", function () {
           },
         },
         {
-          breakpoint: 480,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -34,5 +34,12 @@ $(document).on("ready", function () {
       lazyLoad: 'ondemand', // ondemand progressive anticipated
       infinite: true,
       dots: true
+    });
+    $(".center").slick({
+      dots: false,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 8,
+      slidesToScroll: 8
     });
   });
