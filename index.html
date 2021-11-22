@@ -73,28 +73,17 @@
       </nav>
     </header>
     <div class="move"></div>
-    <div class="slideshow">
-      <div class="slides fade">
-        <img src="assets/images/slider/1.jpg" />
-      </div>
-      <div class="slides fade">
-        <img src="assets/images/slider/2.png" />
-      </div>
-      <div class="slides fade">
-        <img src="assets/images/slider/3.png" />
-      </div>
-      <a class="prevBtn" onclick="increase(-1)"
-        ><i class="far fa-arrow-alt-circle-left"></i
-      ></a>
-      <a class="nextBtn" onclick="increase(1)"
-        ><i class="far fa-arrow-alt-circle-right"></i
-      ></a>
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    </div>
+      <section class="lazy slider">
+        <div class="slides">
+          <img src="assets/images/slider/1.jpg">
+        </div>
+        <div class="slides">
+          <img src="assets/images/slider/2.png">
+        </div>
+        <div class="slides">
+          <img src="assets/images/slider/3.png">
+        </div>
+      </section>
     <div class="container">
       <div class="titleSection">
         <h2 class="underline">
@@ -276,7 +265,7 @@
       </div>
       <div class="product">
         <div class="info">
-          <img src="assets/images/product/2.jpg" />
+          <img src="assets/images/product/2.jpg"/>
           <h4>Vitamin C 120mg (copii)</h4>
           <p>118 ml (gust de portocale)</p>
         </div>
@@ -332,7 +321,13 @@
         </div>
       </div>
     </section>
-    <script src="assets/js/slideshow.js"></script>
+    <div class="container">
+      <div class="titleSection">
+        <h2 class="underline">
+          <span>Cauta produsele potrivite pentru tines</span>
+        </h2>
+      </div>
+    </div>
     <script src="assets/js/app.js"></script>
     <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"
@@ -344,6 +339,5 @@
       charset="utf-8"
     ></script>
     <script src="assets/js/productslider.js"></script>
-    22
   </body>
 </html>

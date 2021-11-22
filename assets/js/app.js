@@ -7,7 +7,7 @@ const fluidWrapper = document.querySelector('.fluidWrapper');
 
 window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
-        move.style = "display: block; padding-top: 175px";
+        move.style = "display: block; padding-top: 185px";
         fluidWrapper.style = "padding-bottom: 15px; padding-top: 15px; transition: .2s all;";
         firstNav.style = "padding-bottom: 5px; transition: .2s all;";
         secondNav.style = "padding-bottom: 5px; padding-top: 5px; transition: .2s all;";
