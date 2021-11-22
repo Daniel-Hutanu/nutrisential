@@ -480,3 +480,58 @@ option[value=""][disabled] {
   color: #4d4d4f;
   cursor: pointer;
 }
+
+/* RESPONSIVE */
+
+.line{
+  width: 28px;
+  height: 3px;
+  background: #939598;
+  cursor: pointer;
+}
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #939598;
+}
+
+.line::before {
+  transform: translateY(-10px);
+}
+
+.line::after {
+  transform: translateY(10px);
+}
+.mobileNav{
+  display: none;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.mobileNav>a{
+  color: #939598;
+  font-size: 28px;
+  margin-left: 5%;
+}
+.mobileNav>img{
+  width: 70px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 525px){
+  .firstNav{
+    display: none;
+  }
+  .secondNav{
+    display: none;
+  }
+  .mobileNav{
+    display: flex;
+  }
+}
