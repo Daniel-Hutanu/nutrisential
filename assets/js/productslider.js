@@ -6,32 +6,32 @@ $(document).on("ready", function () {
       slidesToScroll: 4,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 525,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
           },
         },
         {
-          breakpoint: 750,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 3,
+            slidesToScroll: 3,
           },
         },
       ],
     });
     $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true
     });
