@@ -16,6 +16,7 @@ input:focus {
 header {
   width: 100%;
   background-color: #fff;
+  overflow: hidden;
 }
 .sticky {
   position: fixed;
@@ -533,5 +534,14 @@ option[value=""][disabled] {
   }
   .mobileNav{
     display: flex;
+  }
+  .noMobile{
+    display: none;
+  }
+  .midColumn{
+    width: 100%;
+  }
+  .searchBar {
+    border-radius: none;
   }
 }
