@@ -328,6 +328,69 @@
         </h2>
       </div>
     </div>
+    <div class="tabs">
+      <button class="tablink green" onclick="openPage('suplimente')" id="defaultOpen">Suplimente<i class="far fa-arrow-alt-circle-down"></i></button>
+<button class="tablink purple" onclick="openPage('cosmetice')">Cosmetice<i class="far fa-arrow-alt-circle-down"></i></button>
+<button class="tablink orange" onclick="openPage('ceaiuri')">Ceaiuri<i class="far fa-arrow-alt-circle-down"></i></button>
+
+<div id="suplimente" class="tabcontent">
+  <div class="container">
+    <button class="btnTab" onclick="openTab('afectiuni'); changeBackground()" id="defaultOpenTab">Afectiuni</button>
+    <button class="btnTab" onclick="openTab('tipuri'); changeBackgroundTwo()" id="closeTab">Tipuri</button>
+  </div>
+  <div class="container tabContent" id="afectiuni">
+    <div class="highlight">
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/cardio.png"/>
+        <p>Cardiovasculare</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/digestie.png"/>
+        <p>Digestie</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/urinare.png"/>
+        <p>Urinare</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/pulmonare.png"/>
+        <p>Pulmonare</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container tabContent" id="tipuri">
+    <div class="highlight">
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/cardio.png"/>
+        <p>Cardiovasculare</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/digestie.png"/>
+        <p>Digestie</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/urinare.png"/>
+        <p>Urinare</p>
+      </div>
+      <div class="itemHighlight">
+        <img src="assets/images/tabs/pulmonare.png"/>
+        <p>Pulmonare</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cosmetice" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="ceaiuri" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+    </div>
     <script src="assets/js/app.js"></script>
     <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"

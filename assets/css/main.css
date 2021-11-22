@@ -238,3 +238,79 @@ header {
   background-color: #d82037;
   color: #fff;
 }
+
+
+.tablink {
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  width: 29.9%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  color: #f1cb00;
+}
+.tablink>i{
+  padding-left: 10px;
+  font-size: 28px;
+  color: #fff;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  height: auto;
+}
+.green{
+  background-color: #53ABA9;
+  margin-left: 60px;
+}
+.purple{
+  background-color: #89177A;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.orange{
+  background-color: #EB8125;
+  margin-right: 60px;
+}
+
+#suplimente {background-color: #53ABA9;}
+#cosmetice {background-color: #89177A;}
+#ceaiuri {background-color: #EB8125;}
+
+.btnTab{
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #F0AB1A;
+  color: #000;
+  box-shadow: 2px -3px 1px rgba(255,255,255,1);
+}
+.tabContent{
+  display: none;
+}
+.highlight{
+  display: flex;
+}
+.itemHighlight{
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
+}
+.itemHighlight>p{
+  font-size: 24px;
+  color: #fff;
+}
+.itemHighlight>img{
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+}
