@@ -94,3 +94,11 @@ $('#closeMap').click(function(){
   k=0;
   }
 });
+
+window.onscroll = function () {
+  var x = window.matchMedia("(max-width: 525px)");
+  if (x.matches) {
+    move.style = "display: none;";
+    header.classList.remove("sticky");
+  }
+}
