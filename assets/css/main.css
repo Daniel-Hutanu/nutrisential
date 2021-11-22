@@ -135,6 +135,7 @@ header {
 
 .container {
   padding: 40px 60px;
+  overflow: hidden;
 }
 .titleSection {
   position: relative;
@@ -538,10 +539,31 @@ option[value=""][disabled] {
   .noMobile{
     display: none;
   }
+  
   .midColumn{
     width: 100%;
+    margin: 0 auto;
+    border-radius: 0%;
+    border-left: none;
+    border-right: none;
   }
   .searchBar {
-    border-radius: none;
+    border-radius: 0%;
+    width: 90%;
+  }
+  .fluidWrapper{
+    padding: 20px 0;
+  }
+  .container{
+    padding: 40px 20px;
+  }
+  .slider{
+    width: 88%;
+  }
+  .slider>img{
+    height: 50px !important;
+  }
+  .slides{
+    height: 180px;
   }
 }

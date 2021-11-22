@@ -8,16 +8,14 @@ const fluidWrapper = document.querySelector(".fluidWrapper");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     move.style = "display: block; padding-top: 185px";
-    fluidWrapper.style =
-      "padding-bottom: 15px; padding-top: 15px; transition: .2s all;";
+    fluidWrapper.style = "padding-bottom: 15px; padding-top: 15px; transition: .2s all;";
     firstNav.style = "padding-bottom: 5px; transition: .2s all;";
     secondNav.style ="padding-bottom: 5px; padding-top: 5px; transition: .2s all;";
     logo.style = "width: 100px; height: 70px; transition: .2s all";
     header.classList.toggle("sticky", window.scrollY > 0);
   } else {
     move.style = "display: none;";
-    fluidWrapper.style =
-      "padding-bottom: 40px; padding-top: 40px; transition: .2s all;";
+    fluidWrapper.style = "padding-bottom: 40px; padding-top: 40px; transition: .2s all;";
     firstNav.style = "padding-bottom: 20px; transition: .2s all;";
     secondNav.style =
       "padding-bottom: 20px; padding-top: 20px; transition: .2s all;";
@@ -95,4 +93,4 @@ $('#closeMap').click(function(){
   $('iframe').fadeIn(800);
   k=0;
   }
-})
+});
