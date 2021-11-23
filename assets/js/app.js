@@ -59,26 +59,23 @@ function changeBackgroundTwo(){
   btnClose.style= "background: #489593; color: #fff; box-shadow: none;";
 }
 
-
-$("#first").mouseover(function(){
-  $("#firstHover").show();
+document.getElementById('first').addEventListener("mouseover", function(){
+  document.getElementById("firstHover").style = "display: block";
 });
-$("#first").mouseout(function(){
-  $("#firstHover").hide();
+document.getElementById('first').addEventListener("mouseout", function(){
+  document.getElementById("firstHover").style = "display: none";
 });
-
-$("#second").mouseover(function(){
-  $("#secondHover").show();
+document.getElementById('second').addEventListener("mouseover", function(){
+  document.getElementById("secondHover").style = "display: block";
 });
-$("#second").mouseout(function(){
-  $("#secondHover").hide();
+document.getElementById('second').addEventListener("mouseout", function(){
+  document.getElementById("secondHover").style = "display: none";
 });
-
-$("#third").mouseover(function(){
-  $("#thirdHover").show();
+document.getElementById('third').addEventListener("mouseover", function(){
+  document.getElementById("thirdHover").style = "display: block";
 });
-$("#third").mouseout(function(){
-  $("#thirdHover").hide();
+document.getElementById('third').addEventListener("mouseout", function(){
+  document.getElementById("thirdHover").style = "display: none";
 });
 
 var k = 0;
@@ -96,9 +93,27 @@ $('#closeMap').click(function(){
 });
 
 window.onscroll = function () {
-  var x = window.matchMedia("(max-width: 525px)");
+  var x = window.matchMedia("(max-width: 1000px)");
   if (x.matches) {
     move.style = "display: none;";
     header.classList.remove("sticky");
+    document.getElementById('first').addEventListener("mouseover", function(){
+      document.getElementById("firstHover").style = "display: block";
+    });
+    document.getElementById('first').addEventListener("mouseout", function(){
+      document.getElementById("firstHover").style = "display: block";
+    });
+    document.getElementById('second').addEventListener("mouseover", function(){
+      document.getElementById("secondHover").style = "display: block";
+    });
+    document.getElementById('second').addEventListener("mouseout", function(){
+      document.getElementById("secondHover").style = "display: block";
+    });
+    document.getElementById('third').addEventListener("mouseover", function(){
+      document.getElementById("thirdHover").style = "display: block";
+    });
+    document.getElementById('third').addEventListener("mouseout", function(){
+      document.getElementById("thirdHover").style = "display: block";
+    });
   }
 }

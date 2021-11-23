@@ -6,7 +6,7 @@ $(document).on("ready", function () {
       slidesToScroll: 4,
       responsive: [
         {
-          breakpoint: 525,
+          breakpoint: 650,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -15,7 +15,7 @@ $(document).on("ready", function () {
           },
         },
         {
-          breakpoint: 800,
+          breakpoint: 950,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -40,6 +40,31 @@ $(document).on("ready", function () {
       infinite: true,
       centerMode: true,
       slidesToShow: 8,
-      slidesToScroll: 8
+      slidesToScroll: 8,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6,
+          },
+        },
+      ],
     });
   });
